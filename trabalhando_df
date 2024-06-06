@@ -4,4 +4,6 @@ import pandas as pd
 dataframe = pd.read_csv("Base_de_Dados\\coronavirus_rj_case_metadata.csv")
 
 dataframeNovo = dataframe.loc[0:1000]
+
+dataframeNovo.to_excel("Base_de_Dados\\coronavirus_rj_case_metadata_MENOR.xlsx")
 print(dataframeNovo)
